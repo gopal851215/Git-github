@@ -61,14 +61,66 @@
             font-size: 14px;
             line-height: 1.5;
         }
+footer {
+    background: linear-gradient(135deg, #0a2540, #122b45);
+    color: #dcdcdc;
+    padding: 50px 30px 20px;
+    margin-top: 40px;
+}
 
-        footer {
-            background: #0a2540;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 14px;
-        }
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.footer-box h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer-box a {
+    display: block;
+    color: #dcdcdc;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.footer-box a:hover {
+    color: #00d4ff;
+    transform: translateX(5px);
+}
+
+.social a {
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+
     </style>
 
 </head>
@@ -112,8 +164,51 @@
     </section>
 
     <footer>
-        <p>© 2025 DevOps UI | Created by Gopal</p>
-    </footer>
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>DevOps Dashboard</h3>
+            <p>
+                A modern DevOps learning dashboard covering Git, CI/CD,
+                Docker, Kubernetes, Cloud, and Monitoring tools.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Tools</h3>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>Jenkins</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>AWS / Azure</li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Docs</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Connect</h3>
+            <div class="social">
+                <a href="#">🐙 GitHub</a>
+                <a href="#">💼 LinkedIn</a>
+                <a href="#">🐦 Twitter</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 DevOps Dashboard | Designed by <strong>Gopal</strong>
+    </div>
+</footer>
+
 
 </body>
 </html>
